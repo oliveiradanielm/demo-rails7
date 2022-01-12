@@ -1,0 +1,10 @@
+<div class="flex justify-between items-center">
+  <h3 class="font-bold text-4xl">Comments</h3>
+</div>
+
+<div id="comments">
+  <%#= Expands to render partial "comments/comment". collection: post.comments %>
+  <%= render post.comments %>
+</div>
+
+<%= render "comments/new", post: post %>
