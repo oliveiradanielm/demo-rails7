@@ -13,7 +13,10 @@
 
   <body>
     <main class="container mx-auto mt-28 px-5 flex">
+      <%= render partial: 'layouts/sidebar_menu' %>
       <%= yield %>
+      <%= render partial: 'layouts/right_menu' %>
+      <%= render partial: 'layouts/footer_menu' %>
     </main>
   </body>
 </html>
